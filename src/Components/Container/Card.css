@@ -1,0 +1,75 @@
+/* FlippableCard.css */
+.flippable-card {
+    perspective: 1000px;
+    width: 11rem;
+    height: 12.5em;
+}
+
+.flippable-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+.flippable-card:hover .flippable-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flippable-card-front, .flippable-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.flippable-card-front {
+    background-color: #E5E7EB;
+}
+
+.flippable-card-back {
+    background-color: #f4f4f4;
+    color: #333;
+    transform: rotateY(180deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-img {
+    width: 100%;
+    height: auto;
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.card-title {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    
+}
+
+.card-text {
+    font-size: .75em;
+    color: #555;
+}
+
+@media (max-width: 768px) {
+    .flippable-card {
+        width: 100%;
+        height: auto;
+    }
+    .flippable-card-inner {
+        height: auto;
+    }
+    .flippable-card-front, .flippable-card-back {
+        height: auto;
+    }
+}

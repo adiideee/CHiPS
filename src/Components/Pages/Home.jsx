@@ -1,39 +1,22 @@
 import React from 'react'
-import Sliderr from '../Sliderr'
-import Card from '../../Card'
+import Sliderr from '../Container/Sliderr'
+import Card from "../Container/Card"
+import Footer from './Footer'
 
 function Home() {
-const cardinfo=[
-  {
-    id:1,
-    para:"lorem20",
-    img:'https://chipsgis.cgstate.gov.in/assets/img/portfolio/mining.jpg',
-    title:"Hi"
-  },
-  {
-    id:2,
-    para:"lorem30",
-    img:'https://chipsgis.cgstate.gov.in/assets/img/portfolio/mining.jpg',
-    // img:'./images/mining.jpg',
-    title:"hello"
 
-  }
-]
 
   return (
-    <div className='w-full h-screen mt-2 mb-2'>
+    <div className='w-full h-screen '>
       <Sliderr/>
-     <section className=' w-[75%] mx-auto '>
-   <div className='w-full flex flex-wrap'>
-  {
-    cardinfo.map((item)=>{
-      return(
-        <Card head={item.title} para={item.para} imgsrc={item.img}  />
-      )
-    })
-  }
-   </div>
+     <section className='mt-3 mb-3 w-[80%] mx-auto'>
+      <h1 className='text-center font-bold text-gray-500 text-4xl'>Chhattisgarh GEO Serivces </h1>
+      <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem sequi aperiam, est animi possimus in voluptatem cupiditate nemo magnam mollitia repellat porro harum, fugit sit! Temporibus nostrum vitae alias similique impedit, possimus beatae eos libero ad aliquid incidunt est pariatur iste suscipit ab exercitationem iure molestias illo blanditiis sunt voluptate.
+        
+      </div>
      </section>
+    {/* <Footer/> */}
     </div>
   )
 }
