@@ -7,7 +7,7 @@ function About() {
     
   
     <section>
-        <section className='w-full p-2 mt-10 overflow-x-hidden' >
+        <section className='w-full p-2 {styles.nunitoFont} mt-10 overflow-x-hidden' >
             <div className='w-[80%] justify-between lg:flex mx-auto rounded-xl hover:shadow-[#b49e9c] shadow-lg p-5 '>
                 <div className=' p-5  h-full my-auto  text-sm lg:text-lg'>
                 <h1 className='font-bold lg:text-3xl text-center  text-xl text-red-500'> About</h1>
@@ -20,7 +20,7 @@ function About() {
 
 
             </div>
-            <div className='w-[80%] justify-between lg:flex mx-auto  mt-20 p-2'>
+            <div className='w-[80%] justify-between lg:flex mx-auto  mt-20 mb-20 p-2'>
                 <div className=' h-1/2 my-auto   text-sm lg:text-lg'>
                 <h1 className='font-bold  text-xl lg:text-3xl text-center text-red-500'> Background</h1>
              

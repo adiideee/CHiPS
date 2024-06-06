@@ -172,10 +172,10 @@ import { TbDeviceLandlinePhone } from "react-icons/tb";
 function Footer() {
   return (
     <section >
-        <div className='w-full   bg-[#212121] overflow-x-hidden'>
+        <div className='w-full bg-black {styles.nunitoFont} overflow-x-hidden'>
             <div className='w-[80%] mx-auto flex justify-between m-4 '>
                 <div className=' m-2  text-slate-200'>
-                    <h1 className='text-red-400 lg:text-2xl text-xl '>Contact Us</h1>
+                    <h1 className='text-grey-400 underline lg:text-2xl text-xl '>Contact Us</h1>
                     <p>
                     Chhattisgarh Infotech Promotion Society (CHiPS),<br />
 3rd Floor, State Data Centre Building,<br />
@@ -185,13 +185,13 @@ Civil Lines, Raipur-492001 Chhattisgarh <br />
 
 {/* <SiGmail  size={20} color='white' className='mr-5 inline' /> <p className="inline">ceochips@nic.in</p> */}
 <span className="flex ">
-<FaPhone size={20} color="slate-200" className="mr-2" /> <p> (0771) 4014158</p>
+<FaPhone size={17} color="slate-200" className="mr-2 mt-1" /> <p> (0771) 4014158</p>
 </span>
 <span className="flex ">
-<SiGmail size={20} color="slate-200" className="mr-2" /> <p> ceochips@nic.in</p>
+<SiGmail size={17} color="slate-200" className="mr-2 mt-1" /> <p> ceochips@nic.in</p>
 </span>
 <span className="flex ">
-<TbDeviceLandlinePhone size={20} color="slate-200" className="mr-2" /> <p> (0771) 4014158</p>
+<TbDeviceLandlinePhone size={17} color="slate-200" className="mr-2 mt-1" /> <p> (0771) 4014158</p>
 </span>
 </p>
                     
