@@ -12,7 +12,9 @@ function App() {
    <>
    {/* <Info/> */}
 <Navbar/>
+<main className='h-full'>
 <Outlet/>
+</main>
 <Footer/>
 </>
   

@@ -4,10 +4,8 @@ import { IoMap } from "react-icons/io5";
 import { FaMapPin } from "react-icons/fa";
 import { FaBuilding } from "react-icons/fa";
 import { AiFillDatabase } from "react-icons/ai";
-import { PiNotePencilFill } from "react-icons/pi";
 import { GrCircleInformation } from "react-icons/gr";
 import { IoHome } from "react-icons/io5";
-import { Navigate } from 'react-router-dom';
 import { NavLink,Link } from 'react-router-dom';
 import logo from "../../images/logo.ico"
 
@@ -20,7 +18,7 @@ function Navbar() {
         <img src={logo} alt="" className='w-[90%] ' />
         </div>
           <div className="flex flex-col space-y-1  ml-16">
-            <span className="text-2xl font-semibold  mr-10 mb-0 text-black  ">CGCOG Chhatisgarh Center of Geo-Information</span>
+            <span className="text-2xl font-semibold  mr-10 mb-0 text-black  "> Chhattisgarh Center of Geo-Information (CGCOG)</span>
             {/* <span className="  text-sm mt-0 text-[#FF00FF]"></span> */}
           </div>
         </div>
