@@ -7,14 +7,14 @@ function Project() {
       para:" Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae assumenda odit dignissimos enim. Voluptate dolor magnam nesciunt. Ex, ea sapiente? ",
       img:'https://chipsgis.cgstate.gov.in/assets/img/portfolio/mining.jpg',
       title:"Hi",
-      finallink:"https://www.chips.gov.in/en"
+      link:"https://www.chips.gov.in/en"
     },
     {
       id:2,
       para:"lorem30",
       img:'https://chipsgis.cgstate.gov.in/assets/img/portfolio/mining.jpg',
       title:"hello",
-      finallink:"https://www.chips.gov.in/en"
+      link:"https://www.chips.gov.in/en"
       
   
     },
@@ -23,14 +23,14 @@ function Project() {
       para:"lorem20",
       img:'https://chipsgis.cgstate.gov.in/assets/img/portfolio/mining.jpg',
       title:"Hi",
-      finallink:"https://www.chips.gov.in/en"
+      link:"https://www.chips.gov.in/en"
     },
     {
       id:4,
       para:"lorem30",
       img:'https://chipsgis.cgstate.gov.in/assets/img/portfolio/mining.jpg',
       title:"hello",
-      finallink:"https://www.chips.gov.in/en"
+      link:"https://www.chips.gov.in/en"
       
   
     },
@@ -39,14 +39,14 @@ function Project() {
       para:"lorem20",
       img:'https://chipsgis.cgstate.gov.in/assets/img/portfolio/mining.jpg',
       title:"Hi",
-      finallink:"https://www.chips.gov.in/en"
+      link:"https://www.chips.gov.in/en"
     },
     {
       id:6,
       para:"lorem30",
       img:'https://chipsgis.cgstate.gov.in/assets/img/portfolio/mining.jpg',
       title:"hello",
-      finallink:"https://www.chips.gov.in/en"
+      link:"https://www.chips.gov.in/en"
       
   
     },
@@ -55,14 +55,14 @@ function Project() {
       para:"lorem20",
       img:'https://chipsgis.cgstate.gov.in/assets/img/portfolio/mining.jpg',
       title:"Hi",
-      finallink:"https://www.chips.gov.in/en"
+      link:"https://www.chips.gov.in/en"
     },
     {
       id:8,
       para:"lorem30",
       img:'https://chipsgis.cgstate.gov.in/assets/img/portfolio/mining.jpg',
       title:"hello",
-      finallink:"https://www.chips.gov.in/en"
+      link:"https://www.chips.gov.in/en"
   
     },
     {
@@ -70,7 +70,7 @@ function Project() {
       para:"lorem30",
       img:'https://chipsgis.cgstate.gov.in/assets/img/portfolio/mining.jpg',
       title:"hello",
-      finallink:"https://www.chips.gov.in/en"
+      link:"https://www.chips.gov.in/en"
       
   
     },
@@ -79,14 +79,14 @@ function Project() {
       para:"lorem20",
       img:'https://chipsgis.cgstate.gov.in/assets/img/portfolio/mining.jpg',
       title:"Hi",
-      finallink:"https://www.chips.gov.in/en"
+      link:"https://www.chips.gov.in/en"
     },
     {
       id:11,
       para:"lorem30",
       img:'https://chipsgis.cgstate.gov.in/assets/img/portfolio/mining.jpg',
       title:"hello",
-      finallink:"https://www.chips.gov.in/en"
+      link:"https://www.chips.gov.in/en"
       
   
     },
@@ -95,14 +95,14 @@ function Project() {
       para:"lorem20",
       img:'https://chipsgis.cgstate.gov.in/assets/img/portfolio/mining.jpg',
       title:"Hi",
-      finallink:"https://www.chips.gov.in/en"
+      link:"https://www.chips.gov.in/en"
     },
     {
       id:13,
       para:"lorem30",
       img:'https://chipsgis.cgstate.gov.in/assets/img/portfolio/mining.jpg',
       title:"hello",
-      finallink:"https://www.chips.gov.in/en"
+      link:"https://www.chips.gov.in/en"
       
   
     },
@@ -111,14 +111,14 @@ function Project() {
       para:"lorem20",
       img:'https://chipsgis.cgstate.gov.in/assets/img/portfolio/mining.jpg',
       title:"Hi",
-      finallink:"https://www.chips.gov.in/en"
+      link:"https://www.chips.gov.in/en"
     },
     {
       id:16,
       para:"lorem30",
       img:'https://chipsgis.cgstate.gov.in/assets/img/portfolio/mining.jpg',
       title:"hello",
-      finallink:"https://www.chips.gov.in/en"
+      link:"https://www.chips.gov.in/en"
   
     },
     {
@@ -126,7 +126,7 @@ function Project() {
       para:"lorem30",
       img:'https://chipsgis.cgstate.gov.in/assets/img/portfolio/mining.jpg',
       title:"hello",
-      finallink:"https://www.chips.gov.in/en"
+      link:"https://www.chips.gov.in/en"
   
     },
     {
@@ -134,7 +134,7 @@ function Project() {
       para:"lorem30",
       img:'https://chipsgis.cgstate.gov.in/assets/img/portfolio/mining.jpg',
       title:"hello",
-      finallink:"https://www.chips.gov.in/en"
+      link:"https://www.chips.gov.in/en"
   
     },
     {
@@ -142,7 +142,7 @@ function Project() {
       para:"lorem30",
       img:'https://chipsgis.cgstate.gov.in/assets/img/portfolio/mining.jpg',
       title:"hello",
-      finallink:"https://www.chips.gov.in/en"
+      link:"https://www.chips.gov.in/en"
   
     },
     {
@@ -150,7 +150,7 @@ function Project() {
       para:"lorem30",
       img:'https://chipsgis.cgstate.gov.in/assets/img/portfolio/mining.jpg',
       title:"hello",
-      finallink:"https://www.chips.gov.in/en"
+      link:"https://www.chips.gov.in/en"
   
     },
 
@@ -163,8 +163,8 @@ function Project() {
    {
     cardinfo.map((item)=>{
       return(
-          <a href={item.finallink} target='_blank'>
-              <Card frontImgSrc={item.img}  frontTitle={item.title} backText={item.para}   />
+          <a href={item.link} target='_blank'>
+              <Card imgSrc={item.img}  title={item.title} text={item.para}   />
           </a>
       )
     })

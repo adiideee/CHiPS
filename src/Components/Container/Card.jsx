@@ -2,20 +2,20 @@
 import React from 'react';
 import './Card.css';
 
-function Card  ({ frontImgSrc, frontTitle, backText }) {
+function Card  ({ imgSrc, title, text }) {
     return (
-        <div className="flippable-card m-2">
-            <div className="flippable-card-inner">
-                <div className="flippable-card-front">
-                    <img src={frontImgSrc} alt="Card Front Image" className="card-img" />
-                    <div className="card-content">
-                        <h2 className="card-title">{frontTitle}</h2>
+        <div className="card m-2">
+            <div className="inner">
+                <div className="front">
+                    <img src={imgSrc} alt="Front Image" className="card-img" />
+                    <div className="para">
+                        <h2 className="title">{title}</h2>
                         
                     </div>
                 </div>
-                <div className="flippable-card-back">
-                    <div className="card-content">
-                        <p className="card-text">{backText}</p>
+                <div className="back">
+                    <div className="para">
+                        <p className="text">{text}</p>
                     </div>
                 </div>
             </div>
