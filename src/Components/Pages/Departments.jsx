@@ -158,8 +158,8 @@ function Project() {
   return (
     <div>
       
-      <div className=' lg:w-[80%] mx-auto  h-full'>
-   <div className='w-full flex flex-wrap p-2 h-full'>
+      <div className=' h-full flex justify-center mb-10 items-center'>
+   <div className=' grid grid-cols-4 gap-5 h-full'>
    {
     cardinfo.map((item)=>{
       return(
