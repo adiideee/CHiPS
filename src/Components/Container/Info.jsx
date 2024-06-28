@@ -1,5 +1,5 @@
 import React from 'react'
-import Marquee from 'react-fast-marquee';
+// import Marquee from 'react-fast-marquee';
 
 function Info() {
     const customStyle = {
@@ -24,9 +24,9 @@ function Info() {
         <div className="inline space-x-0 mr-2 w-60 text-xs hover:text-red-900">
             <a href='https://dst.gov.in/chhattisgarh' target="_blank">Department of Science and Technology विज्ञान एवं प्रौद्योगिकी विभाग</a>
         </div>
-        <div className="w-60 text-xs" style={marqueeStyle}>
+        {/* <div className="w-60 text-xs" style={marqueeStyle}>
             <Marquee speed={50}>Developed a web based system to search, view and download geo-refrenced digital khasra maps</Marquee>
-        </div>
+        </div> */}
       </div>
     </div>
   )
