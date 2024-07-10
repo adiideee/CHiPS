@@ -15,7 +15,7 @@ function App() {
 <main className='h-full'>
 <Outlet/>
 </main>
-<Footer/>
+{/* <Footer/> */}
 </>
   
   );
