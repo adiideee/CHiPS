@@ -28,7 +28,7 @@
 .main{
     /* background-color: bisque; */
     background: #E0E0E0; /* Teal to purple gradient */
-    padding: 3rem;
+    padding:2rem;
     border: black .20rem solid;
     border-radius: 5%;
 }

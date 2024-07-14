@@ -5,10 +5,10 @@ import chipsabout from "../../images/chips_about.png";
 function About() {
   return (
     <>
-<<<<<<< HEAD
-      <section>
+  <section>
         <section className="w-full p-2 mt-10 overflow-x-hidden">
-          <div className="w-[80%] justify-between lg:flex mx-auto rounded-xl hover:shadow-[#b49e9c] shadow-lg p-5 ">
+         {/* <div1></div1> */}
+         <div className="w-[80%] justify-between lg:flex mx-auto rounded-xl hover:shadow-[#b49e9c] shadow-lg p-5 ">
             <div className=" p-5  h-full my-auto  text-sm lg:text-lg">
               <h1 className="font-bold lg:text-3xl text-center  text-xl text-red-500">
                 {" "}
@@ -54,7 +54,9 @@ function About() {
         
             <img src={chipsabout} alt="" className='lg:w-1/3 w-1/2 p-2   shadow-lg shadow-zinc-400 rounded-xl'  style={{position:'relative',height:'400px', backgroundColor:'whitesmoke', top:'150px'}} />
           </div>
-          <div className="w-[80%] justify-between lg:flex mx-auto  mt-20 p-2">
+
+       {/* <div2></div2> */}
+       <div className="w-[80%] justify-between lg:flex mx-auto  mt-20 p-2">
             <div className=" h-1/2 my-auto   text-sm lg:text-lg">
               <h1 className="font-bold  text-xl lg:text-3xl text-center text-red-500">
                 {" "}
@@ -67,10 +69,14 @@ function About() {
                 GIS capacity building among Departments and Development of Geo-Ecosystem.
                  It will help to optimize collection, collation, compilation and centralization of spatial data. This project will facilitate
                  Spatial Data Infrastructure (SDI) of Chhattisgarh State.
-=======
-    
+</p>
+
+    </div>
+    </div>
+
   
-    <section>
+   {/* <section3></section3> */}
+   <section>
         <section className='w-full p-2 {styles.nunitoFont} mt-10 overflow-x-hidden' >
             <div className='w-[80%] justify-between lg:flex mx-auto rounded-xl hover:shadow-[#b49e9c] shadow-lg p-5 '>
                 <div className=' p-5  h-full my-auto  text-sm lg:text-lg'>
@@ -90,7 +96,7 @@ function About() {
              
                 <p className='m-3 '>
                 Need for a federated approach for creation, sharing and management of map data has long been felt in the state. There are multiple departments, independently creating spatial data. It has been found that following issues needs to be addressed:
->>>>>>> 04809ddb7e895704324ec182fbf06a89bd58b7e5
+ 04809ddb7e895704324ec182fbf06a89bd58b7e5
                 <br />
                 <br />
                 <ul className="list-disc ">
@@ -129,6 +135,11 @@ function About() {
           </div>
         </section>
       </section>
+
+      
+</section>
+</section>
+     
     </>
   );
 }

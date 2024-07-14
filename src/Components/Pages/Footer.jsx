@@ -3,6 +3,93 @@ import { FaInstagram } from "react-icons/fa";
 // import { FaTwitter } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa";
 import { SiGmail } from "react-icons/si";
+
+import React from 'react'
+import { FaPhone } from "react-icons/fa6";
+import { TbDeviceLandlinePhone } from "react-icons/tb";
+function Footer() {
+  return (
+    <section >
+        <div className='w-full bg-black {styles.nunitoFont} overflow-x-hidden'>
+            <div className='w-[80%] mx-auto flex justify-between m-4 '>
+                <div className=' m-2  text-slate-200'>
+                    <h1 className='text-grey-400 underline lg:text-2xl text-xl '>Contact Us</h1>
+                    <p>
+                    Chhattisgarh Infotech Promotion Society (CHiPS),<br />
+3rd Floor, State Data Centre Building,<br />
+Opp. New Circuit House,<br />
+Civil Lines, Raipur-492001 Chhattisgarh <br />
+<br />
+
+{/* <SiGmail  size={20} color='white' className='mr-5 inline' /> <p className="inline">ceochips@nic.in</p> */}
+<span className="flex ">
+<FaPhone size={17} color="slate-200" className="mr-2 mt-1" /> <p> (0771) 4014158</p>
+</span>
+<span className="flex ">
+<SiGmail size={17} color="slate-200" className="mr-2 mt-1" /> <p> ceochips@nic.in</p>
+</span>
+<span className="flex ">
+<TbDeviceLandlinePhone size={17} color="slate-200" className="mr-2 mt-1" /> <p> (0771) 4014158</p>
+</span>
+</p>
+                    
+                </div>
+                <div className=''>
+                    <p>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3718.7943554322765!2d81.64576277503755!3d21.240001780462606!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13fe02f2d34945b1%3A0x8bd999504a271498!2sChhattisgarh%20Infotech%20Promotion%20Society%20(CHiPS)!5e0!3m2!1sen!2sin!4v1717582812017!5m2!1sen!2sin" className ="w-[400px] h-[300px] " allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </p>
+                </div>
+
+                    </div>
+                    <div className=''>
+                        <p>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3718.7943554322765!2d81.64576277503755!3d21.240001780462606!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13fe02f2d34945b1%3A0x8bd999504a271498!2sChhattisgarh%20Infotech%20Promotion%20Society%20(CHiPS)!5e0!3m2!1sen!2sin!4v1717582812017!5m2!1sen!2sin" className="w-[400px] h-[300px] " allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </p>
+                    </div>
+
+
+                </div>
+
+            
+        </section>
+    )
+}
+
+export default Footer
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // import Dropdown from './Dropdown';
 
 // function Footer() {
@@ -165,84 +252,4 @@ import { SiGmail } from "react-icons/si";
 // }
 
 // export default Footer
-
-import React from 'react'
-import { FaPhone } from "react-icons/fa6";
-import { TbDeviceLandlinePhone } from "react-icons/tb";
-function Footer() {
-<<<<<<< HEAD
-    return (
-        <section >
-            <div className='w-full   bg-[#212121] overflow-x-hidden'>
-                <div className='w-[80%] mx-auto flex justify-between m-2 '>
-                    <div className=' m-2  text-slate-200'>
-                        <h1 className='text-red-400 lg:text-2xl text-xl '>Contact Us</h1>
-                        <p>
-                            Chhattisgarh Infotech Promotion Society (CHiPS),<br />
-                            3rd Floor, State Data Centre Building,<br />
-                            Opp. New Circuit House,<br />
-                            Civil Lines, Raipur-492001 Chhattisgarh <br />
-                            <br />
-
-                            {/* <SiGmail  size={20} color='white' className='mr-5 inline' /> <p className="inline">ceochips@nic.in</p> */}
-                            <span className="flex ">
-                                <FaPhone size={20} color="slate-200" className="mr-2" /> <p> (0771) 4014158</p>
-                            </span>
-                            <span className="flex ">
-                                <SiGmail size={20} color="slate-200" className="mr-2" /> <p> ceochips@nic.in</p>
-                            </span>
-                            <span className="flex ">
-                                <TbDeviceLandlinePhone size={20} color="slate-200" className="mr-2" /> <p> (0771) 4014158</p>
-                            </span>
-                        </p>
-=======
-  return (
-    <section >
-        <div className='w-full bg-black {styles.nunitoFont} overflow-x-hidden'>
-            <div className='w-[80%] mx-auto flex justify-between m-4 '>
-                <div className=' m-2  text-slate-200'>
-                    <h1 className='text-grey-400 underline lg:text-2xl text-xl '>Contact Us</h1>
-                    <p>
-                    Chhattisgarh Infotech Promotion Society (CHiPS),<br />
-3rd Floor, State Data Centre Building,<br />
-Opp. New Circuit House,<br />
-Civil Lines, Raipur-492001 Chhattisgarh <br />
-<br />
-
-{/* <SiGmail  size={20} color='white' className='mr-5 inline' /> <p className="inline">ceochips@nic.in</p> */}
-<span className="flex ">
-<FaPhone size={17} color="slate-200" className="mr-2 mt-1" /> <p> (0771) 4014158</p>
-</span>
-<span className="flex ">
-<SiGmail size={17} color="slate-200" className="mr-2 mt-1" /> <p> ceochips@nic.in</p>
-</span>
-<span className="flex ">
-<TbDeviceLandlinePhone size={17} color="slate-200" className="mr-2 mt-1" /> <p> (0771) 4014158</p>
-</span>
-</p>
-                    
-                </div>
-                <div className=''>
-                    <p>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3718.7943554322765!2d81.64576277503755!3d21.240001780462606!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13fe02f2d34945b1%3A0x8bd999504a271498!2sChhattisgarh%20Infotech%20Promotion%20Society%20(CHiPS)!5e0!3m2!1sen!2sin!4v1717582812017!5m2!1sen!2sin" className ="w-[400px] h-[300px] " allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    </p>
-                </div>
->>>>>>> 04809ddb7e895704324ec182fbf06a89bd58b7e5
-
-                    </div>
-                    <div className=''>
-                        <p>
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3718.7943554322765!2d81.64576277503755!3d21.240001780462606!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13fe02f2d34945b1%3A0x8bd999504a271498!2sChhattisgarh%20Infotech%20Promotion%20Society%20(CHiPS)!5e0!3m2!1sen!2sin!4v1717582812017!5m2!1sen!2sin" className="w-[400px] h-[300px] " allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                        </p>
-                    </div>
-
-
-                </div>
-
-            </div>
-        </section>
-    )
-}
-
-export default Footer
 

@@ -79,10 +79,6 @@ function Project() {
       para:"lorem20",
       img:'https://chipsgis.cgstate.gov.in/assets/img/portfolio/mining.jpg',
       title:"Hi",
-<<<<<<< HEAD
-      finallink:"https://www.chips.gov.in/en"
-    }
-=======
       link:"https://www.chips.gov.in/en"
     },
     {
@@ -158,18 +154,12 @@ function Project() {
   
     },
 
->>>>>>> 04809ddb7e895704324ec182fbf06a89bd58b7e5
   ]
   return (
     <div>
       
-<<<<<<< HEAD
-      <div className=' lg:w-[100%] mx-auto  h-full'>
-   <div className='w-full flex flex-wrap p-2 h-full'>
-=======
       <div className=' h-full flex justify-center mb-10 items-center'>
    <div className=' grid grid-cols-4 gap-5 h-full'>
->>>>>>> 04809ddb7e895704324ec182fbf06a89bd58b7e5
    {
     cardinfo.map((item)=>{
       return(

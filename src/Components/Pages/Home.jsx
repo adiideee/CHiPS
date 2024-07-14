@@ -9,15 +9,8 @@ function Home() {
   return (
     <div className='w-full {styles.nunitoFont} h-screen '>
       <Sliderr/>
-<<<<<<< HEAD
-      <div class="container mx-auto">
-     <section className='mt-3 mb-3 w-[100%] mx-auto  '>
-     <div className="w-[100%] justify-between lg:6xl mx-auto rounded-xl  hover:shadow-[#000000] shadow-lg p-5   ">
-      <h1 className='text-center font-bold text-orange-500 text-4xl'>Chhattisgarh GEO Serivces </h1>
-=======
      <section className='mt-10 mb-10 w-[80%] mx-auto'>
       <h1 className='text-center font-bold text-gray-500 text-4xl'>Chhattisgarh GEO Serivces </h1>
->>>>>>> 04809ddb7e895704324ec182fbf06a89bd58b7e5
       <div>
       <ul className=" text-2xl">
                   <li>
@@ -69,18 +62,9 @@ function Home() {
   </div>
 </div>
 
-
+</section>
       </div>
-     </section>
-    {/* <Footer/> */}
-    <br />
-    <br />
-
-    {/* <div class="box-border md:box-content">
-kskskskj
-</div> */}
-    </div>
-    </div>
+   
   )
 }
 
