@@ -1,13 +1,15 @@
-import React from 'react'
-import Sliderr from '../Container/Sliderr'
-import Card from "../Container/Card"
-import Footer from './Footer'
+import React from "react";
+import Sliderr from "../Container/Sliderr";
+import Card from "../Container/Card";
+import Footer from "./Footer";
 
 function Home() {
-
-
   return (
-    <div className='w-full {styles.nunitoFont} h-screen '>
+// Updated upstream
+ 
+   
+  <>
+     <div className='w-full {styles.nunitoFont} h-full '>
       <Sliderr/>
      <section className='mt-10 mb-10 w-[80%] mx-auto'>
       <h1 className='text-center font-bold text-gray-500 text-4xl'>Chhattisgarh GEO Serivces </h1>
@@ -24,21 +26,12 @@ function Home() {
                 their uses has competing and conflicts interests that may arise between the various stakeholders makes compulsory to 
                 enable planning at multiple levels.
                 Government of Chhattisgarh through its nodal agency, Chhattisgarh InfoTech & biotech Promotion Society (CH𝓲PS) an autonomous organization under theDepartment of Information Technology, in consultation with Department of Panchyat and Rural Development (P&RD), and Department of Land Revenue (LRD), has generated Natural Resources Database (NRD), Infrastructure Resource Database and Cadastral Database for the State of Chhattisgarh on various scale from 1:50000 scale for natural resource, 1:4000 for rural cadastral maps to 1:1000 for urban amenities using IRS LISS-III/IV and CARTOSET data made available by NRSA(ISRO). These databases of Natural Resources (NRD), Socio-economics, Infrastructure and other collateral information has helped in project planning, implementation and impact assessment. The land parcel layer in this vector data base has been integrated with the tenancy records of B-1 and Khasra. The delivery of these maps and land records has been made possible in the state for the first time. The secured printing of maps and handling of vector required for capturing mutation data has been done for the first time in the country.
-              </p>
-      </div>
-      <div class="flex space-x-6 ">
-  <div class="relative flex flex-col mt-6 text-black-700 bg-white shadow-md bg-clip-border shadow-[#000000] rounded-xl w-96">
-    <div class="p-6">
-      <h5 class="block mb-2 font-sans text-xl antialiased font-semibold leading-snug tracking-normal text-blue-gray-900">
-      Development of Spatial Database for Road and railway Network of Chhattisgarh State
-      </h5>
-      <p class="mb-4" style={{textAlign: 'justify'}}>
-      Digitization of road map provided by PWD/RES, Updation of road network from high resolution IRS satellite data on 1:50,000 scale and feature extraction from satellite image for new roads, on 1:50,000 scale. Validation of database in association with PWD/RES and the digital database generated in standard GIS format.
-      </p>
-    </div>
-
-  </div>
-  <div class="relative flex flex-col mt-6 text-black-700 bg-white shadow-md bg-clip-border shadow-[#000000] rounded-xl w-96">
+</p>
+    
+  
+</div>
+<div className="w-full h-full flex flex-wrap justify-evenly  p-3 ">
+<div class="relative flex flex-col mt-6 text-black-700 bg-white shadow-md bg-clip-border shadow-[#000000] rounded-xl w-96">
     <div class="p-6">
       <h5 class="block mb-2 font-sans text-xl antialiased font-semibold leading-snug tracking-normal text-blue-gray-900">
       Natural Resources Database for the state of Chhattisgarh
@@ -60,12 +53,16 @@ function Home() {
       </p>
     </div>
   </div>
+  
 </div>
-
 </section>
+{/* <Footer/> */}
       </div>
-   
-  )
+
+  </>
+
+  );
+{/* >>>>>>> 5a9ca97f843a69121b4049fd5004bda7adc404bc */}
 }
 
-export default Home
+export default Home;

@@ -41,11 +41,7 @@ Civil Lines, Raipur-492001 Chhattisgarh <br />
                 </div>
 
                     </div>
-                    <div className=''>
-                        <p>
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3718.7943554322765!2d81.64576277503755!3d21.240001780462606!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13fe02f2d34945b1%3A0x8bd999504a271498!2sChhattisgarh%20Infotech%20Promotion%20Society%20(CHiPS)!5e0!3m2!1sen!2sin!4v1717582812017!5m2!1sen!2sin" className="w-[400px] h-[300px] " allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                        </p>
-                    </div>
+                   
 
 
                 </div>

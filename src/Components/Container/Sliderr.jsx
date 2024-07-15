@@ -1,5 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
+import { FaArrowAltCircleRight } from "react-icons/fa";
+import { FaArrowAltCircleLeft } from "react-icons/fa";
 import { RxDotFilled } from "react-icons/rx";
 
 function Sliderr() { 
@@ -69,13 +71,14 @@ function Sliderr() {
           className="absolute right-5 top-1/2 -translate-y-1/2 cursor-pointer   "
           onClick={nextSlide}
         >
-          <FaArrowRight size={25} color="#a3b8c2" />
+          <FaArrowAltCircleRight size={45}  />
         </span>
         <span
           className="absolute left-5 top-1/2 -translate-y-1/2 cursor-pointer "
           onClick={prevSlide}
         >
-          <FaArrowLeft size={25} color="#a3b8c2" />
+       
+          <FaArrowAltCircleLeft size={45}  />
         </span>
         {/* Navigation dots */}
      
