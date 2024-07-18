@@ -13,7 +13,7 @@ router.post("/register", validInfo, async (req, res) => {
 
         const { name, email, password } = req.body;
 
-        // 2. check if user exiat (if user exist then throw error)
+        // 2. check if user exist (if user exist then throw error)
 
         const user = await pool.query("select * from users where user_email = $1", [
             email,
@@ -43,7 +43,7 @@ router.post("/register", validInfo, async (req, res) => {
 
         const token = jwtGenerator(newUser.rows[0].user_id);
 
-        res.json({ token });
+       return  res.json({ token });
     } catch (err) {
         console.error(err.message);
         res.status(500).send("Server Error");
