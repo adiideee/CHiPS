@@ -139,11 +139,123 @@
 
 // export default Login
 
+// import React, { useEffect, useState } from 'react';
+// import logo from "../../../../images/logo.ico";
+
+// function Login() {
+
+//   const initialvalues = {
+//     username: "",
+//     email: "",
+//     password: "",
+//   };
+
+//   const [formvalues, setFormvalues] = useState(initialvalues);
+//   const [formerror, setFormerror] = useState({});
+//   const [submit, setSubmit] = useState(false);
+
+//   const handlesubmit = (e) => {
+//     e.preventDefault();
+//     setFormerror(validate(formvalues));
+//     setSubmit(true);
+//     console.log(formvalues);
+//   };
+
+//   const handlechange = (e) => {
+//     const { name, value } = e.target;
+//     setFormvalues({ ...formvalues, [name]: value });
+//   };
+
+//   useEffect(() => {
+//     console.log(formerror);
+//     if (Object.keys(formerror).length === 0 && submit) {
+//       console.log(formvalues);
+//     }
+//   }, [formerror]);
+
+//   const validate = (val) => {
+//     const error = {};
+//     const regex = /^(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*])[A-Za-z0-9!@#$%^&*]{8,}$/;
+
+//     if (!val.username) {
+//       error.username = "Username is required";
+//     }
+//     if (!val.email) {
+//       error.email = "Email is required";
+//     }
+//     if (!val.password) {
+//       error.password = "Password is required";
+//     } else if (!regex.test(val.password)) {
+//       error.password = "Password should be at least 8 characters long, contain one special character, one number, and one uppercase letter";
+//     }
+
+//     return error;
+//   };
+
+//   return (
+//     <section className="flex items-center justify-center min-h-screen bg-gray-100 p-4">
+//       <div className="w-full max-w-md p-8 space-y-8 bg-white shadow-lg rounded-lg">
+//         <div className="flex justify-center">
+//           <img src={logo} alt="Logo" className="w-32 h-12" />
+//         </div>
+//         <form onSubmit={handlesubmit} className="space-y-6">
+//           <h1 className="text-2xl font-bold text-center">Login Here</h1>
+//           <div className="space-y-4">
+//             <div>
+//               <label className="block text-sm font-medium text-gray-700">Username</label>
+//               <input
+//                 type="text"
+//                 placeholder="Enter Your Username"
+//                 onChange={handlechange}
+//                 name="username"
+//                 value={formvalues.username}
+//                 className="w-full px-3 py-2 mt-1 border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500"
+//               />
+//               <p className="mt-1 text-sm text-red-600">{formerror.username}</p>
+//             </div>
+
+//             <div>
+//               <label className="block text-sm font-medium text-gray-700">Email</label>
+//               <input
+//                 type="email"
+//                 placeholder="Enter Email"
+//                 onChange={handlechange}
+//                 name="email"
+//                 value={formvalues.email}
+//                 className="w-full px-3 py-2 mt-1 border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500"
+//               />
+//               <p className="mt-1 text-sm text-red-600">{formerror.email}</p>
+//             </div>
+
+//             <div>
+//               <label className="block text-sm font-medium text-gray-700">Password</label>
+//               <input
+//                 type="password"
+//                 placeholder="Enter password"
+//                 onChange={handlechange}
+//                 name="password"
+//                 value={formvalues.password}
+//                 className="w-full px-3 py-2 mt-1 border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500"
+//               />
+//               <p className="mt-1 text-sm text-red-600">{formerror.password}</p>
+//             </div>
+
+//             <button type="submit" className="w-full px-4 py-2 font-medium text-white bg-[#9EC8B9] rounded-md hover:bg-[#092635] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+//               Submit
+//             </button>
+//           </div>
+//         </form>
+//       </div>
+//     </section>
+//   );
+// }
+
+// export default Login;
+
 import React, { useEffect, useState } from 'react';
-import logo from "../../../../images/logo.ico";
+// import { FcGoogle } from "react-icons/fcGoogle";
 
 function Login() {
-
   const initialvalues = {
     username: "",
     email: "",
@@ -193,55 +305,37 @@ function Login() {
   };
 
   return (
-    <section className="flex items-center justify-center min-h-screen bg-gray-100 p-4">
-      <div className="w-full max-w-md p-8 space-y-8 bg-white shadow-lg rounded-lg">
-        <div className="flex justify-center">
-          <img src={logo} alt="Logo" className="w-32 h-12" />
-        </div>
-        <form onSubmit={handlesubmit} className="space-y-6">
-          <h1 className="text-2xl font-bold text-center">Login Here</h1>
+    <section className="flex items-center justify-center max-w-sm">
+  <div className="w-full max-w-sm p-8 px-18 bg-white">
+    <form onSubmit={handlesubmit} className="space-y-6 max-w-sm">
           <div className="space-y-4">
             <div>
-              <label className="block text-sm font-medium text-gray-700">Username</label>
-              <input
-                type="text"
-                placeholder="Enter Your Username"
-                onChange={handlechange}
-                name="username"
-                value={formvalues.username}
-                className="w-full px-3 py-2 mt-1 border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500"
-              />
-              <p className="mt-1 text-sm text-red-600">{formerror.username}</p>
-            </div>
-
-            <div>
-              <label className="block text-sm font-medium text-gray-700">Email</label>
               <input
                 type="email"
                 placeholder="Enter Email"
                 onChange={handlechange}
                 name="email"
                 value={formvalues.email}
-                className="w-full px-3 py-2 mt-1 border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500"
+                className="w-full px-3 py-2 mt-1 border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 text-sm focus:border-indigo-500"
               />
               <p className="mt-1 text-sm text-red-600">{formerror.email}</p>
             </div>
 
             <div>
-              <label className="block text-sm font-medium text-gray-700">Password</label>
               <input
                 type="password"
                 placeholder="Enter password"
                 onChange={handlechange}
                 name="password"
                 value={formvalues.password}
-                className="w-full px-3 py-2 mt-1 border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500"
+                className="w-full px-3 py-2 mt-1 border border-gray-300 rounded-md text-sm shadow-sm focus:ring-indigo-500 focus:border-indigo-500"
               />
               <p className="mt-1 text-sm text-red-600">{formerror.password}</p>
             </div>
+            <p className='text-[#4dbcaa] text-sm'> <a href='#'>Forgot your Password? </a> </p>
 
-            <button type="submit" className="w-full px-4 py-2 font-medium text-white bg-[#9EC8B9] rounded-md hover:bg-[#092635] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
-              Submit
+            <button type="submit" className="w-full px-4 py-2 font-medium text-white bg-[#092635] rounded-md hover:bg-white hover:text-[#092635] border hover:border-[#092635] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+              Login
             </button>
           </div>
         </form>
@@ -251,3 +345,4 @@ function Login() {
 }
 
 export default Login;
+

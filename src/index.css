@@ -21,3 +21,8 @@
     font-family: 'Nunito', sans-serif;
   }
   
+.bg-image {
+    background-image: url('./images/bgImg.png'); 
+    background-size: cover; 
+    background-position: center; 
+  }

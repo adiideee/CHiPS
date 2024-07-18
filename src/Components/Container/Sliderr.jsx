@@ -9,7 +9,7 @@ function Sliderr() {
     { url: "https://stategisportal.nic.in/stategisportal/assets/img/slider/22/slider1.png" },
     { url: "https://stategisportal.nic.in/stategisportal/assets/img/slider/22/slider2.png" },
     { url: "https://stategisportal.nic.in/stategisportal/assets/img/slider/22/slider3.png" },
-    { url: "https://meetmyholiders.com/wp-content/uploads/2019/08/chhattisgarh-banner.jpg" }
+    { url: "https://meetmyholiders.com/wp-content/uploads/2019/08/chhattisgarh-banner.jpg" },
   ];
 
   const [currentSlide, setCurrentSlide] = useState(0);
