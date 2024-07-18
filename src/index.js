@@ -11,7 +11,7 @@ import Data from './Components/Pages/Data';
 import Districtgis from './Components/Pages/Districtgis';
 import Stategis from './Components/Pages/Stategis';
 import Cgatlas from './Components/Pages/Cgatlas';
-import Login from './Components/Pages/Login/Client/Login';
+import LoginPage from './Components/Pages/Login/Client/LoginPage';
 
 const router=createBrowserRouter(
   createRoutesFromElements(
@@ -21,7 +21,7 @@ const router=createBrowserRouter(
       <Route path="/departments" element={<Departments/>}/>
       <Route path="/data" element={<Data/>}/>
       <Route path="/stategis" element={<Stategis/>} />
-      <Route path="/districtgis" element={<Login/>}/>
+      <Route path="/districtgis" element={<LoginPage/>}/>
       <Route path="/cgatlas" element={<Cgatlas/>} />
 
     </Route>
