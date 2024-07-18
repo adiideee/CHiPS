@@ -1,11 +1,13 @@
-const Pool = require("pg").Pool
+const env =require('dotenv').config({path:"./.env"})
+import { Pool } from "pg";
+
 
 const pool = new Pool({
-    user:"postgres",
-    password: "opengis",
-    host: "localhost",
-    port: 5433,
-    database: "jwt_tutorial"
+    user:process.env.DB_USERS,
+    password: process.env.DB_PASSWORD,
+    host:process.env.DB_HOST ,
+    port:process.env.DB_PORT ,
+    database:process.env.DB_NAME,
 });
 
 module.exports = pool;

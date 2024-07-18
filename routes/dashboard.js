@@ -1,4 +1,7 @@
 const router = require("express").Router();
+// const express = require('express');
+// const router = express.Router();
+// const app = express();
 
 const pool = require("../database/db");
 const authorization = require("../middleware/authorization");

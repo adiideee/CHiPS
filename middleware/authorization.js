@@ -1,4 +1,5 @@
-const jwt = require("jsonwebtoken");
+// const jwt = require("jsonwebtoken");
+import jwt from "jsonwebtoken"
 
 require("dotenv").config();
 
@@ -19,7 +20,7 @@ module.exports = function(req, res, next) {
     const verify = jwt.verify(token, process.env.jwtSecret);
 
     req.user = verify.user;
-    next();
+    next(); // used tp passthe data
   } catch (err) {
     res.status(401).json({ msg: "Token is not valid" });
   }
