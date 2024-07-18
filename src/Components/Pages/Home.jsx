@@ -15,7 +15,7 @@ function Home() {
       {/* <h1 className='text-center font-bold text-gray-500 text-4xl'>Chhattisgarh GEO Serivces </h1> */}
       <h1 className="text-center font-bold text-orange-500 text-4xl">
               Chhattisgarh GEO Serivces{" "}
-            </h1>
+            </h1><br/>
       <div>
       <ul className=" text-2xl">
                   <li>
