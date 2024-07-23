@@ -252,97 +252,76 @@
 
 // export default Login;
 
-import React, { useEffect, useState } from 'react';
-// import { FcGoogle } from "react-icons/fcGoogle";
+import React, { useState } from 'react';
 
-function Login() {
-  const initialvalues = {
-    username: "",
-    email: "",
-    password: "",
-  };
+const Login = () => {
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
 
-  const [formvalues, setFormvalues] = useState(initialvalues);
-  const [formerror, setFormerror] = useState({});
-  const [submit, setSubmit] = useState(false);
+  // const handleSubmit = async (e) => {
+  //   e.preventDefault();
+  //   try {
+  //     const response = await fetch('http://localhost:5000/api/auth/login', {
+  //       method: 'POST',
+  //       headers: {
+  //         'Content-Type': 'application/json',
+  //       },
+  //       body: JSON.stringify({ email, password }),
+  //     });
 
-  const handlesubmit = (e) => {
-    e.preventDefault();
-    setFormerror(validate(formvalues));
-    setSubmit(true);
-    console.log(formvalues);
-  };
+  //     const data = await response.json();
 
-  const handlechange = (e) => {
-    const { name, value } = e.target;
-    setFormvalues({ ...formvalues, [name]: value });
-  };
-
-  useEffect(() => {
-    console.log(formerror);
-    if (Object.keys(formerror).length === 0 && submit) {
-      console.log(formvalues);
-    }
-  }, [formerror]);
-
-  const validate = (val) => {
-    const error = {};
-    const regex = /^(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*])[A-Za-z0-9!@#$%^&*]{8,}$/;
-
-    if (!val.username) {
-      error.username = "Username is required";
-    }
-    if (!val.email) {
-      error.email = "Email is required";
-    }
-    if (!val.password) {
-      error.password = "Password is required";
-    } else if (!regex.test(val.password)) {
-      error.password = "Password should be at least 8 characters long, contain one special character, one number, and one uppercase letter";
-    }
-
-    return error;
-  };
+  //     if (response.ok) {
+  //       setAuth(data.token);
+  //       localStorage.setItem('token', data.token);
+  //       navigate('/dashboard');
+  //     } else {
+  //       alert(data.error);
+  //     }
+  //   } catch (error) {
+  //     console.error('Error:', error);
+  //   }
+  // };
 
   return (
-    <section className="flex items-center justify-center max-w-sm">
-  <div className="w-full max-w-sm p-8 px-18 bg-white">
-    <form onSubmit={handlesubmit} className="space-y-6 max-w-sm">
-          <div className="space-y-4">
-            <div>
-              <input
-                type="email"
-                placeholder="Enter Email"
-                onChange={handlechange}
-                name="email"
-                value={formvalues.email}
-                className="w-full px-3 py-2 mt-1 border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 text-sm focus:border-indigo-500"
-              />
-              <p className="mt-1 text-sm text-red-600">{formerror.email}</p>
-            </div>
-
-            <div>
-              <input
-                type="password"
-                placeholder="Enter password"
-                onChange={handlechange}
-                name="password"
-                value={formvalues.password}
-                className="w-full px-3 py-2 mt-1 border border-gray-300 rounded-md text-sm shadow-sm focus:ring-indigo-500 focus:border-indigo-500"
-              />
-              <p className="mt-1 text-sm text-red-600">{formerror.password}</p>
-            </div>
-            <p className='text-[#4dbcaa] text-sm'> <a href='#'>Forgot your Password? </a> </p>
-
-            <button type="submit" className="w-full px-4 py-2 font-medium text-white bg-[#092635] rounded-md hover:bg-white hover:text-[#092635] border hover:border-[#092635] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
-              Login
-            </button>
-          </div>
-        </form>
+    <form className="flex flex-col items-center space-y-4">
+      <div className="w-full px-8">
+        <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="email">
+          Email:
+        </label>
+        <input
+          id="email"
+          type="email"
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+          required
+          className="w-full px-3 py-2 border rounded-lg text-gray-700 focus:outline-none"
+        />
       </div>
-    </section>
+      <div className="w-full px-8">
+        <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="password">
+          Password:
+        </label>
+        <input
+          id="password"
+          type="password"
+          value={password}
+          onChange={(e) => setPassword(e.target.value)}
+          required
+          className="w-full px-3 py-2 border rounded-lg text-gray-700 focus:outline-none"
+        />
+      </div>
+      <div className="w-full px-8">
+        <button
+          type="submit"
+          className="w-full bg-blue-500 text-white py-2 rounded-lg hover:bg-blue-700 focus:outline-none"
+        >
+          Log In
+        </button>
+      </div>
+    </form>
   );
-}
+};
 
 export default Login;
 
