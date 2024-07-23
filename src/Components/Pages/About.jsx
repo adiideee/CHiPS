@@ -56,7 +56,7 @@ function About() {
           </div>
 
        {/* <div2></div2> */}
-       <div className="w-[90%] justify-between lg:flex mx-auto  mt-20 p-2">
+       <div className="w-[90%] justify-between lg:flex mx-auto  mt-20 mb-10 p-2">
             <div className=" h-1/2 my-auto   text-sm lg:text-lg">
               <h1 className="font-bold  text-xl lg:text-3xl text-center text-red-500">
                 {" "}
