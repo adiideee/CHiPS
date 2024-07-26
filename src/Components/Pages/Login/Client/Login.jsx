@@ -302,7 +302,7 @@ const Login = () => {
           value={email}
           onChange={(e) => setEmail(e.target.value)}
           required
-          className="w-full px-3 py-2 border rounded-lg text-gray-700 focus:outline-none"
+          className="w-full px-3 py-2 border rounded-lg text-gray-700 focus:border-[#67a160] focus:outline-none"
         />
       </div>
       <div className="w-full px-8">
@@ -316,7 +316,7 @@ const Login = () => {
           placeholder='Enter a strong password'
           onChange={(e) => setPassword(e.target.value)}
           required
-          className="w-full px-3 py-2 border rounded-lg text-gray-700 focus:outline-none"
+          className="w-full px-3 py-2 border rounded-lg text-gray-700 focus:border-[#67a160] focus:outline-none"
         />
       </div>
       <div className="w-full px-8 text-left">
