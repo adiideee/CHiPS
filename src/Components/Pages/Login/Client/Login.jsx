@@ -252,11 +252,11 @@
 
 // export default Login;
 
-import React, { useState } from 'react';
+// import React, { useState } from 'react';
 
-const Login = () => {
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
+// const Login = () => {
+//   const [email, setEmail] = useState('');
+//   const [password, setPassword] = useState('');
 
   // const handleSubmit = async (e) => {
   //   e.preventDefault();
@@ -283,8 +283,14 @@ const Login = () => {
   //   }
   // };
 
+import React, { useState } from 'react';
+
+const Login = () => {
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+
   return (
-    <form className="flex flex-col items-center space-y-4">
+    <form className="flex flex-col items-center space-y-4 font-sans">
       <div className="w-full px-8">
         <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="email">
           Email:
@@ -292,6 +298,7 @@ const Login = () => {
         <input
           id="email"
           type="email"
+          placeholder='Enter your email'
           value={email}
           onChange={(e) => setEmail(e.target.value)}
           required
@@ -306,15 +313,19 @@ const Login = () => {
           id="password"
           type="password"
           value={password}
+          placeholder='Enter a strong password'
           onChange={(e) => setPassword(e.target.value)}
           required
           className="w-full px-3 py-2 border rounded-lg text-gray-700 focus:outline-none"
         />
       </div>
+      <div className="w-full px-8 text-left">
+        <a href='#' className='text-sm text-blue-700 hover:text-[#c84548]'>Forgot your password?</a>
+      </div>
       <div className="w-full px-8">
         <button
           type="submit"
-          className="w-full bg-blue-500 text-white py-2 rounded-lg hover:bg-blue-700 focus:outline-none"
+          className="w-full bg-blue-500 text-white py-2 mb-2 rounded-lg hover:bg-[#67a160] focus:outline-none"
         >
           Log In
         </button>
@@ -324,4 +335,3 @@ const Login = () => {
 };
 
 export default Login;
-
