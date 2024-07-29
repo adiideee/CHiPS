@@ -1,4 +1,3 @@
-
 import './App.css';
 import Sliderr from './Components/Container/Sliderr';
 import Footer from './Components/Pages/Footer';
