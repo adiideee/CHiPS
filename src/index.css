@@ -21,9 +21,9 @@
     font-family: 'Nunito', sans-serif;
   }
   
-.bg-image {
-    background-image: url('./images/bgImg.png'); 
+
+  .bg-image-dept {
+    background-image: url('./images/DeptBg.png'); 
     background-size: cover; 
     background-position: center; 
   }
-

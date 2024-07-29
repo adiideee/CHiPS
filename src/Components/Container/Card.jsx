@@ -1,4 +1,3 @@
-// FlippableCard.js
 import React from 'react';
 import './Card.css';
 
@@ -10,7 +9,6 @@ function Card  ({ imgSrc, title, text }) {
                     <img src={imgSrc} alt="Front Image" className="card-img" />
                     <div className="para">
                         <h2 className="title">{title}</h2>
-                        
                     </div>
                 </div>
                 <div className="back">

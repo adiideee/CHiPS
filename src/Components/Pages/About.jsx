@@ -1,19 +1,16 @@
-import React from "react";
-import about from "../../images/about.jpg";
-import chipsabout from "../../images/chips_about.png";
+import React from 'react'
+import about from "../../images/ABOUTchips.jpeg";
 
-function About() {
+function AboutUs() {
   return (
-    <>
-  <section>
-        <section className="w-full p-2 mt-10 overflow-x-hidden">
-         {/* <div1></div1> */}
-         <div className="w-[80%] justify-between lg:flex mx-auto rounded-xl hover:shadow-[#b49e9c] shadow-lg p-5 ">
-            <div className=" p-5  h-full my-auto  text-sm lg:text-lg">
-              <h1 className="font-bold lg:text-3xl text-center  text-xl text-red-500">
+    <div>
+      <div className="w-[80%] justify-between lg:flex mx-auto rounded-xl hover:shadow-[#b49e9c] shadow-lg p-5 ">
+      <div className=" p-5  h-full my-auto  text-sm lg:text-lg">
+      <h1 className="font-bold lg:text-3xl text-center  text-xl text-[#012366]">
                 {" "}
                 About
               </h1>
+              <img src={about} alt="" className=' p-2 w-full shadow-lg shadow-zinc-400 rounded-xl mb-12'  style={{position:'relative',height:'400px', backgroundColor:'whitesmoke', top:'10px'}} />
               <p className="mt-2 " style={{textAlign:"justify"}}>
                 Chhattisgarh Infotech Promotion Society (CHiPS) is the nodal
                 agency and prime mover for propelling IT growth & implementation
@@ -50,40 +47,27 @@ function About() {
                 come up with the “Electronics, IT and ITeS Investment Policy of
                 Chhattisgarh 2014 – 2019”.
               </p>
-            </div>
-        
-            <img src={chipsabout} alt="" className='lg:w-1/3 w-1/2 p-2   shadow-lg shadow-zinc-400 rounded-xl'  style={{position:'relative',height:'400px', backgroundColor:'whitesmoke', top:'150px'}} />
-          </div>
-
-       {/* <div2></div2> */}
-       <div className="w-[90%] justify-between lg:flex mx-auto  mt-20 mb-10 p-2">
-            <div className=" h-1/2 my-auto   text-sm lg:text-lg">
-              <h1 className="font-bold  text-xl lg:text-3xl text-center text-red-500">
+      </div>
+      </div>
+      <div className="w-[90%] justify-between lg:flex mx-auto  mt-20 mb-10 p-2">
+            <div className=" h-1/2 my-auto text-sm lg:text-lg">
+              <h1 className="font-bold  text-xl lg:text-3xl text-center text-[#012366]">
                 {" "}
                 Background
               </h1>
-
               <p className="m-3 " style={{textAlign:"justify"}}>
                 The objective of <b>Chhattisgarh Center of Geoinformatics (CGCOG)</b> is insertion of GIS/ Geospatial technology in 
                 Chhattisgarh State for effective planning, monitoring, management of natural resources, efforts optimization, 
                 GIS capacity building among Departments and Development of Geo-Ecosystem.
                  It will help to optimize collection, collation, compilation and centralization of spatial data. This project will facilitate
                  Spatial Data Infrastructure (SDI) of Chhattisgarh State.
-</p>
+              </p>
 
     </div>
     </div>
-
-  
-   {/* <section3></section3> */}
-   
-
-      
-</section>
-</section>
-     
-    </>
-  );
+    </div>
+  )
 }
 
-export default About;
+export default AboutUs
+
