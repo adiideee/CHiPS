@@ -11,7 +11,7 @@ import logo from "../../images/logo.ico"
 
 function Navbar() {
   return (
-    <nav className="p-4 min-h-4 pb-2 flex justify-between items-center px-1 text-sm font-semibold bg-gray-300">
+    <nav className="p-4 min-h-4 pb-2 flex justify-between items-center px-1 text-sm font-medium bg-[#A7B5A9]">
       <a href='#'> 
         <div className="flex items-center ">
         <div className="h-10 w-32 ml-3 mb-3 pl-2 bg-cover bg-no-repeat bg-center navlogo" alt="CG-Govt-Logo" >
@@ -25,14 +25,14 @@ function Navbar() {
         </a>
       <ul className=" font-semibold flex  space-x-5 mr-3">
         <li>
-         <NavLink to="/" className="flex items-center hover:text-gray-500" > <IoHome className="mr-2 text-lg" />Home</NavLink>
+         <NavLink to="/" className="flex items-center hover:text-[#596354]" > <IoHome className="mr-2 text-lg" />Home</NavLink>
          {/* <a href="#" className="flex items-center hover:text-[#FF00FF]" >
             <AiFillHome className="mr-2 text-lg" />
             Home
           </a> */}
         </li>
         <li>
-            <NavLink to="/about-us" className="flex items-center hover:text-gray-500" >
+            <NavLink to="/about-us" className="flex items-center hover:text-[#596354]" >
             <GrCircleInformation className="mr-2 text-lg" />
             About Us
 
@@ -43,7 +43,7 @@ function Navbar() {
           </a> */}
         </li>
         <li>
-            <NavLink className="flex items-center hover:text-gray-500" to="/departments" >
+            <NavLink className="flex items-center hover:text-[#596354]" to="/departments" >
               <FaBuilding className="mr-2 text-lg" color='red-900' />
             Departments</NavLink>
           {/* <a href="#" className="flex items-center hover:text-[#FF00FF]">
@@ -52,7 +52,7 @@ function Navbar() {
           </a> */}
         </li>
         <li>
-            <NavLink  className="flex items-center hover:text-gray-500" to="/data" >
+            <NavLink  className="flex items-center hover:text-[#596354]" to="/data" >
             <AiFillDatabase className="mr-2 text-lg" />
             Data
 
@@ -63,7 +63,7 @@ function Navbar() {
           </a> */}
         </li>
         <li>
-          <NavLink className="flex items-center hover:text-gray-500" to="/stategis">
+          <NavLink className="flex items-center hover:text-[#596354]" to="/stategis">
           <IoMap  className="mr-2 text-lg" />
             CG GIS
           </NavLink>
@@ -74,7 +74,7 @@ function Navbar() {
           </a> */}
         </li>
         <li>
-            <NavLink className="flex items-center hover:text-gray-500" to="/districtgis" >
+            <NavLink className="flex items-center hover:text-[#596354]" to="/districtgis" >
             <FaMapPin  className="mr-2 text-lg" />
             District GIS
             </NavLink>
@@ -84,7 +84,7 @@ function Navbar() {
           </a> */}
         </li>
         <li>
-            <NavLink className="flex items-center hover:text-gray-500" to="/cgatlas" >
+            <NavLink className="flex items-center hover:text-[#596354]" to="/cgatlas" >
             <FaAtlas className="mr-2 text-lg" />
             CG Atlas
 
