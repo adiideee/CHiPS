@@ -15,8 +15,6 @@ export default function LoginPage() {
         </div>
       </div>
       <div className="w-2/3 bg-green-200 flex justify-center items-center bg-cover" style={{ backgroundImage: `url(${loginbg})` }}>
-        {/* Alternatively, you can use an img tag if you prefer */}
-        {/* <img src="path/to/your/image.jpg" alt="Background" className="object-cover h-full w-full" /> */}
       </div>
     </div>
   );
