@@ -14,13 +14,14 @@ import Cgatlas from './Components/Pages/Cgatlas';
 import LoginPage from './Components/Pages/Login/Client/LoginPage';
 import RegistrationPage from './Components/Pages/Register/RegistrationPage';
 import Dashboard from './Components/Pages/Dashboard/Dashboard';
+import UserDashboard from './Components/Pages/UserDashboard'; 
 
 const router=createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<App/>}>
       <Route path="/" element={<Home/>} />
       <Route path="/about-us" element={<About/>} />
-      <Route path="/departments" element={<Departments/>}/>
+      <Route path="/departments" element={<UserDashboard/>}/>
       <Route path="/data" element={<Dashboard/>}/>
       <Route path="/stategis" element={<RegistrationPage/>} />
       <Route path="/districtgis" element={<LoginPage/>}/>
