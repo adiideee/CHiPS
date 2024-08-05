@@ -302,7 +302,7 @@ const Login = () => {
           value={email}
           onChange={(e) => setEmail(e.target.value)}
           required
-          className="w-full px-3 py-2 border rounded-lg text-gray-700 focus:border-[#67a160] focus:outline-none"
+          className="w-full px-3 py-2 border rounded-lg text-gray-700 focus:border-[#012366] focus:outline-none"
         />
       </div>
       <div className="w-full px-8">
@@ -316,16 +316,16 @@ const Login = () => {
           placeholder='Enter a strong password'
           onChange={(e) => setPassword(e.target.value)}
           required
-          className="w-full px-3 py-2 border rounded-lg text-gray-700 focus:border-[#67a160] focus:outline-none"
+          className="w-full px-3 py-2 border rounded-lg text-gray-700 focus:border-[#012366] focus:outline-none"
         />
       </div>
       <div className="w-full px-8 text-left">
-        <a href='#' className='text-sm text-blue-700 hover:text-[#c84548]'>Forgot your password?</a>
+        <a href='#' className='text-sm text-[#012366] hover:text-[#c84548]'>Forgot your password?</a>
       </div>
       <div className="w-full px-8">
         <button
           type="submit"
-          className="w-full bg-blue-500 text-white py-2 mb-2 rounded-lg hover:bg-[#67a160] focus:outline-none"
+          className="w-full bg-[#012366] text-white py-2 mb-2 rounded-lg hover:bg-[#67a160] focus:outline-none"
         >
           Log In
         </button>
