@@ -81,7 +81,7 @@ const UserDashboard = () => {
         </thead>
         <tbody>
           {users.map((user) => (
-            <tr key={user.id} className="border-b m-4 hover:bg-gray-700 hover:text-white rounded-lg hover:shadow-xl shadow-[#012366] ">
+            <tr key={user.id} className="border-b m-4 hover:bg-white hover:text-[#012366] rounded-lg hover:shadow-xl shadow-[#012366] ">
               <td className="p-2 text-left m-4">{user.id}</td>
               <td className="p-2 text-left m-4">{user.name}</td>
               <td className="p-2 text-left m-4">{user.email}</td>
