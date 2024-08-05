@@ -13,7 +13,7 @@ import Stategis from './Components/Pages/Stategis';
 import Cgatlas from './Components/Pages/Cgatlas';
 import LoginPage from './Components/Pages/Login/Client/LoginPage';
 import RegistrationPage from './Components/Pages/Register/RegistrationPage';
-import Dashboard from './Components/Pages/Dashboard';
+import Dashboard from './Components/Pages/Dashboard/Dashboard';
 
 const router=createBrowserRouter(
   createRoutesFromElements(
