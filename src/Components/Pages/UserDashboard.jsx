@@ -69,6 +69,7 @@ const UserDashboard = () => {
           </a>
 
       </div>
+      
       <div className="container mx-auto p-6">
       <table className="min-w-full bg-gray-100">
         <thead className='m-4'>
@@ -81,7 +82,7 @@ const UserDashboard = () => {
         </thead>
         <tbody>
           {users.map((user) => (
-            <tr key={user.id} className="border-b m-4 hover:bg-white hover:text-[#012366] hover:font-semibold rounded-lg hover:shadow-xl shadow-[#012366] ">
+            <tr key={user.id} className="border-b m-4 hover:bg-white hover:text-[#012366] hover:font-semibold hover:rounded-md hover:shadow-xl shadow-[#012366] ">
               <td className="p-2 text-left m-4">{user.id}</td>
               <td className="p-2 text-left m-4">{user.name}</td>
               <td className="p-2 text-left m-4">{user.email}</td>
