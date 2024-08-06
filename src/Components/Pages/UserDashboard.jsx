@@ -1,4 +1,5 @@
 import React from 'react';
+import { IoArrowRedoCircleSharp } from "react-icons/io5";
 
 const users = [
   { id: 1, name:'user1', email: 'user1@example.com', isActive: true },
@@ -78,6 +79,7 @@ const UserDashboard = () => {
             <th className="p-2 text-left underline">User-Name</th>
             <th className="p-2 text-left underline">User-Email</th>
             <th className="p-2 text-left underline">Active Status</th>
+            <th className="p-2 text-left underline">Action</th>
           </tr>
         </thead>
         <tbody>
@@ -93,6 +95,7 @@ const UserDashboard = () => {
                   <span className="text-red-500"><span className='text-[8px] text-center'>🔴</span> Inactive</span>
                 )}
               </td>
+              <td className="p-2 text-left m-4 text-2xl"><a href='#'><IoArrowRedoCircleSharp /></a></td>
             </tr>
           ))}
         </tbody>
